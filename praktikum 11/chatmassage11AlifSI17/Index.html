@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coba</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .isidalambox {
+        border: 1px solid;
+        width: 400px;
+        height: 400px;
+        margin: 10% auto;
+        padding: 2rem;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="isidalambox">
+      <ul id="messages"></ul>
+      <input type="text" id="textbox" placeholder="Masukkan pesanmu" />
+      <button id="button" >Send</button>
+    </div>
+    <script>
+      let pesan = document.getElementById("pesan");
+      let isipesan = document.getElementById("isipesan");
+      let tombol = document.getElementById("tombol");
+
+      tombol.addEventListener("click", function () {
+        let newMessage = document.createElement("li");
+        newMessage.innerHTML = textbox.value;
+        messages.appendChild(newMessage);
+        textbox.value = "";
+      });
+    </script>
+  </body>
+</html>

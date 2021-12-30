@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="isi">
+      <p class="isipesan"></p>
+      <input type="isi" value="" class="pesan" placeholder="Hello" />
+      <button class="button" type="submit">Send</button>
+    </div>
+    <script>
+      const isi = document.querySelector(".isipesan");
+      const pesan = document.querySelector(".pesan");
+      let button = document.querySelector(".tombol");
+
+      tombol.addEventListener("click", () => {
+        const judul = document.createElement("p");
+        judul.innerHTML = `<p class="pesanbaru">${pesan.value}</p>`;
+        text.appendChild(judul);
+      });
+    </script>
+  </body>
+</html>
